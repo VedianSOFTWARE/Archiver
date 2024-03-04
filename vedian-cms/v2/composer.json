@@ -1,0 +1,31 @@
+{
+    "name": "vediansoftware/pagebuilder",
+    "description": "Content management system for laravel",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Cms\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0",
+        "laravel/framework": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cms\\HtmlElementProvider",
+                "Cms\\CmsProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Tom van Tilburg",
+            "email": "tom@vediansoft.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
